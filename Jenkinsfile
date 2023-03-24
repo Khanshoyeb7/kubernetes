@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'microk8s kubectl apply -f apache-deploy.yaml'
+                sh 'sudo microk8s kubectl apply -f apache-deploy.yaml'
             }
         }
     }
